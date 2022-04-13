@@ -6,6 +6,9 @@
     <persistence-unit name="h2pu" transaction-type="RESOURCE_LOCAL">
    	<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
    		<class>ir.amin.jpa.h2.entity.Car</class>
+   		<class>ir.amin.jpa.h2.entity.Document</class>
+   		<class>ir.amin.jpa.h2.entity.Insurance</class>
+   		<class>ir.amin.jpa.h2.entity.Person</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:jpadb;DB_CLOSE_DELAY=-1" /><!-- tcp:localhost:8082/ -->
